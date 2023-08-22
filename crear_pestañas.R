@@ -18,7 +18,7 @@ saveWorkbook(BD_r_v, "addWorksheetExample.xlsx", overwrite = TRUE)
 wb <- createWorkbook()
 addWorksheet(wb, sheetName = "Sheet 1")
 writeDataTable(wb, sheet = "Sheet 1", x = iris)
-writeDataTable(wb, sheet = 1, x = mtcars, tableName = "mtcars", startCol = 10)
+writeDataTable(wb, sheet = "Sheet 1", x = mtcars, tableName = "mtcars", startCol = 10) #Tambien puedo usar startRow = 
 
 getTables(wb, sheet = "Sheet 1")
 saveWorkbook(wb, "ejemplo.xlsx", overwrite = TRUE)  #
